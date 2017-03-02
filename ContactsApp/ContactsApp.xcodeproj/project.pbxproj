@@ -12,6 +12,7 @@
 		9606C2A81E65117300DA2722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A61E65117300DA2722 /* Main.storyboard */; };
 		9606C2AA1E65117300DA2722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A91E65117300DA2722 /* Assets.xcassets */; };
 		9606C2AD1E65117300DA2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2AB1E65117300DA2722 /* LaunchScreen.storyboard */; };
+		96B68C211E67978500D49126 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B68C201E67978500D49126 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9606C2A91E65117300DA2722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9606C2AC1E65117300DA2722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9606C2AE1E65117300DA2722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B68C201E67978500D49126 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		9606C2961E65117200DA2722 = {
 			isa = PBXGroup;
 			children = (
+				96B68C201E67978500D49126 /* Contact.swift */,
 				9606C2A11E65117200DA2722 /* ContactsApp */,
 				9606C2A01E65117200DA2722 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B68C211E67978500D49126 /* Contact.swift in Sources */,
 				9606C2A51E65117300DA2722 /* ViewController.swift in Sources */,
 				9606C2A31E65117300DA2722 /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				9606C2B31E65117300DA2722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
