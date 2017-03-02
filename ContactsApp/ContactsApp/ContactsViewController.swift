@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class ContactsViewController: UITableViewController {
 	
 	//MARK: - Properties
-	var names = [String: [String]]() {
+	var contactsDict = [String: [Contact]]() {
 		didSet {
-			if names.count != sectionNames.count {
-				sectionNames =  names.keys.sorted()
+			if contactsDict.count != sectionNames.count {
+				sectionNames =  contactsDict.keys.sorted()
 			}
 		}
 	}
@@ -22,8 +22,8 @@ class ViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		names.updateValue(["Allen", "Adams"], forKey: "A")
-		names.updateValue(["Cartner", "Cormen","Camel"], forKey: "C")
+		let contact = Contact(firstName: "John", lastName: "Adams", phoneNumber: "67677676", email: nil, address: nil, image: nil)
+		contactsDict.updateValue([contact], forKey: "A")
 		
 	}
 
@@ -41,7 +41,7 @@ class ViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if let contacts = names[sectionNames[section]] {
+		if let contacts = contactsDict[sectionNames[section]] {
 			return contacts.count
 		}
 		return 0
@@ -49,7 +49,9 @@ class ViewController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "Contact", for: indexPath)
-		cell.textLabel?.text = (names[sectionNames[indexPath.section]]!)[indexPath.row]
+		
+		let contact = contactsDict[sectionNames[indexPath.section]]![indexPath.row]
+		cell.textLabel?.text = "\(contact.firstName) \(contact.lastName)"
 		return cell
 	}
 	
