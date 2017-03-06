@@ -12,6 +12,7 @@
 		9606C2A81E65117300DA2722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A61E65117300DA2722 /* Main.storyboard */; };
 		9606C2AA1E65117300DA2722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A91E65117300DA2722 /* Assets.xcassets */; };
 		9606C2AD1E65117300DA2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2AB1E65117300DA2722 /* LaunchScreen.storyboard */; };
+		963F957E1E6D2CBB00126546 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F957D1E6D2CBB00126546 /* DetailViewController.swift */; };
 		96B68C211E67978500D49126 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B68C201E67978500D49126 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		9606C2A91E65117300DA2722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9606C2AC1E65117300DA2722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9606C2AE1E65117300DA2722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963F957D1E6D2CBB00126546 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		96B68C201E67978500D49126 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 				9606C2A21E65117300DA2722 /* AppDelegate.swift */,
 				9606C2A41E65117300DA2722 /* ContactsViewController.swift */,
 				9606C2A61E65117300DA2722 /* Main.storyboard */,
+				963F957D1E6D2CBB00126546 /* DetailViewController.swift */,
 				9606C2A91E65117300DA2722 /* Assets.xcassets */,
 				9606C2AB1E65117300DA2722 /* LaunchScreen.storyboard */,
 				9606C2AE1E65117300DA2722 /* Info.plist */,
@@ -142,6 +145,7 @@
 				96B68C211E67978500D49126 /* Contact.swift in Sources */,
 				9606C2A51E65117300DA2722 /* ContactsViewController.swift in Sources */,
 				9606C2A31E65117300DA2722 /* AppDelegate.swift in Sources */,
+				963F957E1E6D2CBB00126546 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

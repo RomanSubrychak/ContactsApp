@@ -55,6 +55,11 @@ class ContactsViewController: UITableViewController {
 		return cell
 	}
 	
-
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let contact = contactsDict[sectionNames[indexPath.section]]!
+		let vc = DetailViewController()
+		//todo: pass contact to vc
+		navigationController?.pushViewController(vc, animated: true)
+	}
 }
 
