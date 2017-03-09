@@ -12,6 +12,7 @@
 		9606C2A81E65117300DA2722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A61E65117300DA2722 /* Main.storyboard */; };
 		9606C2AA1E65117300DA2722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2A91E65117300DA2722 /* Assets.xcassets */; };
 		9606C2AD1E65117300DA2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9606C2AB1E65117300DA2722 /* LaunchScreen.storyboard */; };
+		9621494B1E70F4CE001CCAFB /* CreateContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9621494A1E70F4CE001CCAFB /* CreateContactViewController.swift */; };
 		96280FF11E6FCABF0087A01C /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 96280FF01E6FCABF0087A01C /* user.png */; };
 		96A7A1DA1E6E543300372B55 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7A1D91E6E543300372B55 /* DetailViewController.swift */; };
 		96B68C211E67978500D49126 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B68C201E67978500D49126 /* Contact.swift */; };
@@ -25,6 +26,7 @@
 		9606C2A91E65117300DA2722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9606C2AC1E65117300DA2722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9606C2AE1E65117300DA2722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9621494A1E70F4CE001CCAFB /* CreateContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactViewController.swift; sourceTree = "<group>"; };
 		96280FF01E6FCABF0087A01C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		96A7A1D91E6E543300372B55 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../DetailViewController.swift; sourceTree = "<group>"; };
 		96B68C201E67978500D49126 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../Contact.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				9606C2A21E65117300DA2722 /* AppDelegate.swift */,
 				9606C2A41E65117300DA2722 /* ContactsViewController.swift */,
 				9606C2A61E65117300DA2722 /* Main.storyboard */,
+				9621494A1E70F4CE001CCAFB /* CreateContactViewController.swift */,
 				96280FF01E6FCABF0087A01C /* user.png */,
 				9606C2A91E65117300DA2722 /* Assets.xcassets */,
 				9606C2AB1E65117300DA2722 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				96B68C211E67978500D49126 /* Contact.swift in Sources */,
 				9606C2A51E65117300DA2722 /* ContactsViewController.swift in Sources */,
+				9621494B1E70F4CE001CCAFB /* CreateContactViewController.swift in Sources */,
 				9606C2A31E65117300DA2722 /* AppDelegate.swift in Sources */,
 				96A7A1DA1E6E543300372B55 /* DetailViewController.swift in Sources */,
 			);

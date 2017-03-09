@@ -36,7 +36,13 @@
                             <outlet property="delegate" destination="ozc-P2-QFB" id="V1O-l6-cbo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="etj-Fd-v1X"/>
+                    <navigationItem key="navigationItem" id="etj-Fd-v1X">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SDp-iJ-ivg">
+                            <connections>
+                                <segue destination="1tC-kg-6d2" kind="show" identifier="showCreateContactViewController" id="fPy-yH-VTV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLk-1Q-yQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +142,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQI-bD-hSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44" y="82.3088455772114"/>
+        </scene>
+        <!--Create Contact View Controller-->
+        <scene sceneID="0co-wc-3sI">
+            <objects>
+                <viewController id="1tC-kg-6d2" customClass="CreateContactViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HBM-wg-csm"/>
+                        <viewControllerLayoutGuide type="bottom" id="CaN-rd-kcn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVq-4L-SGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eO-qb-MjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="-696"/>
         </scene>
     </scenes>
 </document>
