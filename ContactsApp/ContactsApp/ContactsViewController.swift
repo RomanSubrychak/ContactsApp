@@ -22,7 +22,7 @@ class ContactsViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		let contact = Contact(firstName: "John", lastName: "Adams", phoneNumber: "67677676", email: nil, address: nil, image: nil)
+		let contact = Contact(firstName: "John", lastName: "Adams", phoneNumber: "6764543577676", email: "adams@test.com", address: "1010 N San-Francisco ave", image: nil)
 		contactsDict.updateValue([contact], forKey: "A")
 		
 	}
@@ -49,17 +49,21 @@ class ContactsViewController: UITableViewController {
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "Contact", for: indexPath)
-		
 		let contact = contactsDict[sectionNames[indexPath.section]]![indexPath.row]
 		cell.textLabel?.text = "\(contact.firstName) \(contact.lastName)"
 		return cell
 	}
 	
-	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let contact = contactsDict[sectionNames[indexPath.section]]!
-		let vc = DetailViewController()
-		//todo: pass contact to vc
-		navigationController?.pushViewController(vc, animated: true)
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "ShowDetailViewController" {
+			if let cell = sender as? UITableViewCell {
+				if let indexPath = tableView.indexPath(for: cell) {
+					if let destinationVC = segue.destination as? DetailViewController {
+						destinationVC.contactToDisplay = contactsDict[sectionNames[indexPath.section]]![indexPath.row]
+					}
+				}
+			}
+		}
 	}
 }
 
