@@ -154,12 +154,21 @@
                     <view key="view" contentMode="scaleToFill" id="cVq-4L-SGM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vih-XK-oaU" customClass="AddButtonView" customModule="ContactsApp" customModuleProvider="target">
+                                <rect key="frame" x="48" y="217" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="kCt-uH-d9c"/>
+                                    <constraint firstAttribute="height" constant="100" id="pN3-XP-jpi"/>
+                                </constraints>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eO-qb-MjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="-696"/>
+            <point key="canvasLocation" x="1853.5999999999999" y="-696.7016491754124"/>
         </scene>
     </scenes>
 </document>

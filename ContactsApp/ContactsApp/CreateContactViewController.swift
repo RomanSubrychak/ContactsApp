@@ -9,6 +9,8 @@
 import UIKit
 
 class CreateContactViewController: UIViewController {
+	
+	var myView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
