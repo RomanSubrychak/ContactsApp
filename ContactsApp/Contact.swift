@@ -12,6 +12,7 @@ class Contact {
 	var firstName: String
 	var lastName: String
 	var phoneNumber: String
+	var company: String?
 	var email: String?
 	var address: String?
 	var image: String?

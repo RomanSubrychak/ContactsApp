@@ -18,13 +18,13 @@ class AddButtonView: UIButton {
 	
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(ovalIn: rect)
-		UIColor.green.setFill()
+		UIColor(red: 0.10, green: 1.00, blue: 0.64, alpha:1.0).setFill()
 		path.fill()
 		
 		//set up the width and height variables
 		//for the horizontal stroke
 		
-		let plusHeight: CGFloat = 10.0
+		let plusHeight: CGFloat = 5.0
 		let plusWidth: CGFloat = min(bounds.width, bounds.height) * 0.6
 		
 		//create the path

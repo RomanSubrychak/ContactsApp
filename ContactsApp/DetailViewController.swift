@@ -51,6 +51,9 @@ class DetailViewController: UITableViewController {
 		if let email = contactToDisplay.email {
 			tableData.append((title: "email:", detail: email))
 		}
+		if let company = contactToDisplay.company {
+			tableData.append((title: "company", detail: company))
+		}
 		if let address = contactToDisplay.address {
 			tableData.append((title: "address:", detail: address))
 		}
