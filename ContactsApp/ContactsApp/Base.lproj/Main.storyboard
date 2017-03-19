@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUE-PG-avl" id="LZL-T4-OM4">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -91,18 +91,18 @@
                                 <rect key="frame" x="0.0" y="309" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TTM-ND-W1v" id="snx-7e-4qe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NLP-wd-dta">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
+                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AHI-cW-r2v">
-                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
+                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -163,13 +163,6 @@
                                     <constraint firstAttribute="width" constant="271" id="Hhu-gw-SRc"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF8-U4-Nog" customClass="AddButtonView" customModule="ContactsApp" customModuleProvider="target">
-                                <rect key="frame" x="157" y="177" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="UF8-U4-Nog" secondAttribute="height" multiplier="1:1" id="0mH-rf-4BH"/>
-                                    <constraint firstAttribute="width" constant="60" id="XM5-bl-qdk"/>
-                                </constraints>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esX-oO-Xu4">
                                 <rect key="frame" x="16" y="384" width="343" height="30"/>
                                 <nil key="textColor"/>
@@ -222,6 +215,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="edit"/>
+                                <connections>
+                                    <action selector="editButton:" destination="1tC-kg-6d2" eventType="touchUpInside" id="v7i-Zo-5Vf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Place a photo here]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-QH-juE">
                                 <rect key="frame" x="102" y="105" width="172" height="21"/>
@@ -233,6 +229,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF8-U4-Nog" customClass="AddButtonView" customModule="ContactsApp" customModuleProvider="target">
+                                <rect key="frame" x="157" y="177" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UF8-U4-Nog" secondAttribute="height" multiplier="1:1" id="0mH-rf-4BH"/>
+                                    <constraint firstAttribute="width" constant="60" id="XM5-bl-qdk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addTapped:" destination="1tC-kg-6d2" eventType="touchUpInside" id="gEl-Nq-K0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -283,7 +289,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="UF8-U4-Nog" id="iJE-c1-7MP"/>
+                        <outlet property="addressTextView" destination="aAs-Kq-Wdf" id="EsD-iH-oAT"/>
+                        <outlet property="companyTextField" destination="sVg-Is-Q7Y" id="GNr-cd-zBq"/>
+                        <outlet property="editButton" destination="8WM-XW-Rdr" id="GZb-q7-vMs"/>
+                        <outlet property="emailTextField" destination="IV7-69-Sub" id="cqx-Qy-c2c"/>
+                        <outlet property="firstNameTextField" destination="esX-oO-Xu4" id="OUA-cN-WOV"/>
+                        <outlet property="hintLabel" destination="eS3-QH-juE" id="EfR-xN-Wl7"/>
                         <outlet property="imageView" destination="tGa-6f-T0T" id="jwd-sp-lCo"/>
+                        <outlet property="lastNameTextField" destination="J1N-JR-rFg" id="DLy-Sj-rEY"/>
+                        <outlet property="phoneNumberTextField" destination="zPQ-gM-bBL" id="al5-O7-818"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eO-qb-MjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
